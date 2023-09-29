@@ -9,9 +9,9 @@
     <button onclick="subscribe()">Subscribe</button>
     <script>
         addEventListener('load', async () => {
-            let serviceWorker = await navigator.serviceWorker.register('./serviceworker.js');
+            let serviceWorker = await navigator.serviceWorker.register('./sw.js');
             console.log(serviceWorker);
-        })
+        });
 
         async function subscribe() {
             let sw = await navigator.serviceWorker.ready;
