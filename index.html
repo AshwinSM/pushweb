@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT360 ELite</title>
+</head>
+<body>
+    <button onclick="subscribe()">Subscribe</button>
+    <script>
+        addEventListener('load', async () => {
+            let serviceWorker = await navigator.serviceWorker.register('./serviceworker.js');
+            console.log(serviceWorker);
+        })
+
+        async function subscribe() {
+            let sw = await navigator.serviceWorker.ready;
+            let push = await sw.pushManager.subscribe({
+                userVisibleOnly : true,
+                applicationServerKey : 'BPWzTVNefiuApmcK67J4H6w5pyJChLmPA2OzhLP_8gZwL1fZqVBD2huW6rRwHYueWO_v7_sTYBKqOUk9bOVABfs'
+            })
+            console.log(JSON.stringify(push));
+        }
+    </script>
+</body>
+</html>
