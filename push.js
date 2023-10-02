@@ -16,12 +16,22 @@ push.setVapidDetails('mailto:test@code.co.uk',vapid.publicKey,vapid.privateKey);
 //     }
 // }
 
-let sub =  {
-    endpoint:"https://fcm.googleapis.com/fcm/send/csxCQBtmWv4:APA91bEJxVBvjAmYWK0ZXPHevMU1npZmVdX6CVybz01WMVE3Nhn8wcKFLLMg_7ghmCQvIlBiOPCBLl9_O2H5f4O8xM_ulZZR7TKuKaHlh99-TJ-ZcvohmwRgY9vBBHRLm6Q8FxqR9Qq_",
+// let sub =  {
+//     endpoint:"https://fcm.googleapis.com/fcm/send/csxCQBtmWv4:APA91bEJxVBvjAmYWK0ZXPHevMU1npZmVdX6CVybz01WMVE3Nhn8wcKFLLMg_7ghmCQvIlBiOPCBLl9_O2H5f4O8xM_ulZZR7TKuKaHlh99-TJ-ZcvohmwRgY9vBBHRLm6Q8FxqR9Qq_",
+//     expirationTime:null,
+//     keys:{
+//         p256dh:"BOPbJptS4pmG4J_bIM4x5q6B6T6c05z5PFNfHELgl6zHK0w4NicjAr_q7VxLNKHI2PPHKjQ0Slllcjs1VayWKWE",
+//         auth:"ETGDdwi_LJAcjoOL9c8cQQ"
+//     }
+// }
+
+
+let sub = 
+{
+    endpoint:"https://fcm.googleapis.com/fcm/send/fDXJaiMk8Is:APA91bEJas3-L1f9AFj-spz-kTASM_uGSA7mo8IkUyqw4OKdYj-LtrM9nSBl-sbn6UpvS4irw35LYL4XM-fQPfAakMkvGv_tAveMJesTB0KxpZ_XoO5ro0HZFClqJvkOHhY0UDYs9TZv",
     expirationTime:null,
-    keys:{
-        p256dh:"BOPbJptS4pmG4J_bIM4x5q6B6T6c05z5PFNfHELgl6zHK0w4NicjAr_q7VxLNKHI2PPHKjQ0Slllcjs1VayWKWE",
-        auth:"ETGDdwi_LJAcjoOL9c8cQQ"
+    keys:{"p256dh":"BFlNFdALUM_GDXWlKMN9eLZk_ggzKgQF4XejTy9WNjbaINWNn40Zx2lmnhwluxqQyQVXCPP8tDnfZe1Lxblrnao",
+    auth:"yaSeG0bYQF-n8p6mobzxTw"
     }
 }
 
