@@ -5,6 +5,7 @@ self.addEventListener('push', function(event) {
     const title = 'CAT360 elite';
     const options = {
       body: 'There is a notification for you from CAT360',
+      data:  event.data.text(),
       icon: 'images/icon.png',
       badge: 'images/badge.png'
     };
