@@ -5,7 +5,8 @@ let vapid =  {
     "privateKey":"8PANSQGtsQ-CQTQADDqEwhxRugs5yiPHhGob9hdZmzY"
 };
 
-push.setVapidDetails('mailto:test@code.co.uk',vapid.publicKey,vapid.privateKey);
+// push.setVapidDetails('mailto:test@code.co.uk',vapid.publicKey,vapid.privateKey);
+push.setVapidDetails('mailto:ashwin2713@gmail.com',vapid.publicKey,vapid.privateKey);
 
 // let sub = {
 //     endpoint:"https://fcm.googleapis.com/fcm/send/eXN-PrLyO9s:APA91bGJCb1_aVFMUwFVe5xV8WAfxZhBuuCrF8HsmJXYvyIOJXIuoBhkc9ks2fAwZbhMVS2inPxOrAk3PT3T2v1BkypW1lMti_CbZ1prBgAsHRe3IrJAj1iGnLQzAD_aUZ6qkrlq0P4C",
